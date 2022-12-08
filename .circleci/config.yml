@@ -7,6 +7,8 @@ jobs:
   build:
     docker:
       - image: "cimg/node:16.0"
+    environment:
+      CHROME_BIN: /usr/bin/google-chrome
     steps:
       - node/install:
           node-version: "16.0"

@@ -8,7 +8,7 @@
     "start": "npm install -f && ng serve",
     "build": "ng build",
     "deploy": "chmod +x bin/deploy.sh && sh bin/deploy.sh",
-    "test": "CHROME_BIN=/usr/bin/google-chrome && ng test --watch=false",
+    "test": "ng test --watch=false",
     "lint": "ng lint --fix",
     "e2e": "ng e2e"
   },
