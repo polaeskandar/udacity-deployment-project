@@ -30,7 +30,7 @@ jobs:
       - run:
           name: Front-End Testing
           command: |
-            CHROME_BIN=/usr/bin/google-chrome karma start --single-run
+            CHROME_BIN=/usr/bin/google-chrome
             npm run frontend:test
       - run:
           name: API Build
