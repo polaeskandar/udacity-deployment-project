@@ -40,6 +40,10 @@ jobs:
   deploy:
     docker:
       - image: "cimg/base:stable"
+    environment:
+      AWS_PROFILE: admin-cli
+      AWS_ACCESS_KEY_ID: AKIARWXDPNQE36URGRRM
+      AWS_SECRET_ACCESS_KEY: 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
     steps:
       - node/install:
           node-version: "16.0"
@@ -58,4 +62,6 @@ workflows:
   udagram:
     jobs:
       - build
-      - deploy
+      - deploy:
+        requires:
+          - build
