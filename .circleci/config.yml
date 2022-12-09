@@ -29,11 +29,10 @@ jobs:
           name: Front-End Build
           command: |
             npm run frontend:build
-      - run:
-          name: Front-End Testing
-          command: |
-
-            npm run frontend:test
+      # - run:
+      #     name: Front-End Testing
+      #     command: |
+      #       npm run frontend:test
       - run:
           name: API Build
           command: |
@@ -48,21 +47,15 @@ jobs:
       - aws-cli/setup
       - checkout
       - run:
-          name: Deploy App
+          name: Frontend Deploy
           command: |
-            echo "# TODO: Install, build, deploy in both apps"
+            npm run frontend:deploy
+      - run:
+          name: API Deploy
+          command: |
+            npm run api:deploy
 workflows:
   udagram:
     jobs:
       - build
-      - hold:
-          filters:
-            branches:
-              only:
-                - master
-          type: approval
-          requires:
-            - build
-      - deploy:
-          requires:
-            - hold
+      - deploy
