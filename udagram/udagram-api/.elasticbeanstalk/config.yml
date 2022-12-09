@@ -1,6 +1,8 @@
 branch-defaults:
   default:
     environment: udacity-backend-api
+deploy:
+  artificat: www/Archive.zip
 environment-defaults:
   udacity-backend-api:
     branch: null

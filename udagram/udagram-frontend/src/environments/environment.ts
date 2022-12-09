@@ -4,9 +4,9 @@
 
 export const environment = {
   production: false,
-  appName: 'Udagram',
+  appName: "Udagram",
   apiHost:
-    'http://udacity-backend-polaeskandar.eba-pmj9pksp.us-east-1.elasticbeanstalk.com/api/v0',
+    "http://udacity-backend-api.eba-xamiwc4p.us-east-1.elasticbeanstalk.com/",
 };
 
 /*

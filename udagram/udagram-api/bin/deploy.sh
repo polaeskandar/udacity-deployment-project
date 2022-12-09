@@ -8,12 +8,13 @@ cp .npmrc www/.npmrc
 cp package.json www/package.json
 
 cd www
-zip -r Archive.zip .
-cd .. 
 
+zip -r Archive.zip .
 eb list
-eb use udacity-backend-polaeskandar
+eb use udacity-backend-api
 eb deploy
+
+cd ..
 
 # Uncomment this block to set the environment variables
 # eb setenv POSTGRES_USERNAME=postgres
