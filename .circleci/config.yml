@@ -71,8 +71,3 @@ workflows:
                 - main
           requires:
             - build
-
-      # - build
-      # - deploy:
-      # requires:
-      # - build
