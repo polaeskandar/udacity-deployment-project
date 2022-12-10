@@ -65,5 +65,14 @@ workflows:
     jobs:
       - build
       - deploy:
+          filters:
+            branches:
+              only:
+                - main
           requires:
             - build
+
+      # - build
+      # - deploy:
+      # requires:
+      # - build
