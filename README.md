@@ -72,4 +72,4 @@ The e2e tests are using Protractor and Jasmine.
 ## Live Project
 
 [Frontend](http://udacity-frontend-polaeskandar.s3-website-us-east-1.amazonaws.com/)
-[Backend](http://udacity-backend-polaeskandar.eba-pmj9pksp.us-east-1.elasticbeanstalk.com/)
+[Backend](http://udacity-backend-api.eba-xamiwc4p.us-east-1.elasticbeanstalk.com/)
